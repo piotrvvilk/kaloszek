@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-"# kaloszek" 
-=======
 <H1>KALOSZEK - AccuWeather EPD frame</H1> 
 
 <H2>1.	How does it work</H2>
@@ -77,7 +74,7 @@ http://developer.accuweather.com/
 
  
  
-<H2>7.	Case</H2>
+<H2>7.	Housing</H2>
 Simple, black :). Designed and printed by my friend Marcin:
 www.instagram.com/creatorepic/
 
@@ -87,4 +84,3 @@ www.instagram.com/creatorepic/
 
 You have to edit „authentication.h” file and set your own WiFi SSID, password and accuweather keys. 
 
->>>>>>> f2f22535ec36410fbaa626395a825248a03dd9e4
