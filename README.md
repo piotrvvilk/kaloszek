@@ -48,7 +48,8 @@ D8 – DC (external pullup 3k3)
 
 D0 – RST (remove while programming)
 
-
+ 
+ 
 <H2>4.	Libraries</H2>
 <H3>  WiFi:</H3>
 http://www.arduino.cc/en/Reference/WiFi
@@ -61,16 +62,24 @@ http://github.com/squix78/json-streaming-parser
 <H3>  MAX17048:</H3>
 http://github.com/hideakitai/MAX17048
 
+ 
+ 
 <H2>5.	Fonts generator</H2>
 http://oleddisplay.squix.ch/#/home
 
+ 
+ 
 <H2>6.	Icons source</H2>
 http://developer.accuweather.com/
 
+ 
+ 
 <H2>7.	Case</H2>
 Simple, black :). Designed and printed by my friend Marcin:
 www.instagram.com/creatorepic/
 
+ 
+ 
 <H2>8.	Settings</H2>
 
 You have to edit „authentication.h” file and set your own WiFi SSID, password and accuweather keys. 
