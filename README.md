@@ -1,86 +1,82 @@
 <H1>KALOSZEK - AccuWeather EPD frame</H1> 
 
-<H2>1.	How does it work</H2>
+<H2> General information</H2>
 Every 30min Kaloszek connects to AccuWeather server. Because AccuWeather trial version allow up to 50 calls per day, device uses 4 separate keys to make sure weather will be downloaded in all 24H. Information about forcast and current weather are downloaded separetly. After completing all data, device display it on screen and going to sleep.
 
-<H2>2.	Hardware </H2>
+<div align="center"><img src="img/1.jpg"></div>
+
+<H2> Hardware </H2>
 
 
 - Waveshare EPD  4.2inch, 400x300,
 
-
 - NodeMCU v3,
-
 
 - Li-ion battery (900mAh),
 
+- Li-ion charger ST4054,
 
-- Li-ion charger (I used ST4054, because I had this one in my drawer),
-
-
-- MAX17048,
+- Li-ion monitor MAX17048,
 
 
+<H2> Connections </H2>
 
-<H2>3.	Hardware connection </H2>
+<H3> </H3>
 
-<H3>MAX 17048:</H3>
+<H4>EPD : </H4>
 
-D1 – SDA
+- D2 – BUSY
 
-D6 – SCL
+- D3 – CS
 
-<H3>EPD:</H3>
+- D4 – RST
 
-D2 – BUSY
+- D5 – CLK
 
-D3 – CS
+- D7 – DIN
 
-D4 – RST
+- D8 – DC (plus external pullup 3k3)
 
-D5 – CLK
+<H3> </H3>
 
-D7 – DIN
+<H4>  MAX17048:</H4>
 
-D8 – DC (external pullup 3k3)
+- D1 – SDA
 
-<H3>Wake up:</H3>
+- D6 – SCL
 
-D0 – RST (remove while programming)
+<H3> </H3>
 
- 
- 
-<H2>4.	Libraries</H2>
-<H3>  WiFi:</H3>
+<H4>Wake up:</H4>
+
+<H3> </H3>
+
+- D0 – RST (remove while programming)
+
+<H2> Libraries</H2>
+<H3> </H3>
+<H4>  WiFi</H4>
 http://www.arduino.cc/en/Reference/WiFi
-<H3>  EPD display:</H3>
+<H4>  EPD display</H4>
 http://github.com/ZinggJM/GxEPD2
-<H3>  AccuWeather:</H3>
+<H4>  AccuWeather</H4>
 http://github.com/jackmax/AccuWeatherLibrary
-<H3>  Json parser:</H3>
+<H4>  Json parser</H4>
 http://github.com/squix78/json-streaming-parser
-<H3>  MAX17048:</H3>
+<H4>  MAX17048</H4>
 http://github.com/hideakitai/MAX17048
 
- 
- 
-<H2>5.	Fonts generator</H2>
+<H2> Fonts generator</H2>
 http://oleddisplay.squix.ch/#/home
 
- 
- 
-<H2>6.	Icons source</H2>
+<H2> Icons source</H2>
 http://developer.accuweather.com/
 
- 
- 
-<H2>7.	Housing</H2>
-Simple, black :). Designed and printed by my friend Marcin:
-www.instagram.com/creatorepic/
+<H2> Housing</H2>
+<H5>Simple, black :). Designed and printed by Marcin:</H5>
+http://www.instagram.com/creatorepic/
 
- 
- 
-<H2>8.	Settings</H2>
+<H2> Settings</H2>
 
 You have to edit „authentication.h” file and set your own WiFi SSID, password and accuweather keys. 
 
