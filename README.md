@@ -1,12 +1,13 @@
 <H1>KALOSZEK - AccuWeather EPD frame</H1> 
 
 <H2> General information</H2>
-Every 30min Kaloszek connects to AccuWeather server. Because AccuWeather trial version allow up to 50 calls per day, device uses 4 separate keys to make sure weather will be downloaded in all 24H. Information about forcast and current weather are downloaded separetly. After completing all data, device display it on screen and going to sleep.
+KALOSZEK is a simple device based on ESP8266 which gets informations shared by AccuWeather and present it on Eink Display. Kaloszek connects to AccuWeather server every 30min. Because AccuWeather trial version allows up to 50 calls per day, device uses 4 separate keys to make sure that the weather will be downloaded 24h a day. After downloading complete information about forcast and current weather, device displays it on screen and go to sleep.
+<H2>
+</H2>
 
 <div align="center"><img src="img/1.jpg"></div>
 
 <H2> Hardware </H2>
-
 
 - Waveshare EPD  4.2inch, 400x300,
 
@@ -79,4 +80,8 @@ http://www.instagram.com/creatorepic/
 <H2> Settings</H2>
 
 You have to edit „authentication.h” file and set your own WiFi SSID, password and accuweather keys. 
+
+<H2> 
+</H2>
+
 
